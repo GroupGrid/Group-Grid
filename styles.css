@@ -1,0 +1,315 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header styles */
+header {
+    
+    background-color: #ffffff;
+    padding: 0px 0;
+    color: white;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 2.5px 5px;
+    margin-top: 12px; /* Move down */
+    margin-left: 64px;
+    border-radius: 8px;
+    
+    /*outline: 1px solid rgb(94, 109, 208);*/
+    
+}
+
+.logo-box a {
+    text-decoration: none;
+}
+.logo {
+    font-family: "Poppins", serif;
+    font-style: normal;
+    text-align: center;
+    padding-left: 2px;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none !important;
+    font-size: 	1.6em;
+    font-weight: 700;
+    margin-bottom: 50x;
+    color: #000000;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f0c674; /* Yellow hover */
+}
+/* Header -Buttons(I made them-da bee)i wanna eat im hungry*/
+.nav-buttons {
+    display: flex;            /* Align buttons in a row */
+    gap: 20px;                /* Space between the buttons */
+    margin-right: auto;
+    justify-content: space-between; /* Space between logo, nav-links, and buttons */
+    align-items: center;            /* Vertically center items */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Style the individual buttons */
+.nav-buttons button {
+    background-color: #ffffff; /* white background for buttons */
+    color: rgb(94, 109, 208);              /* blue text */
+    padding: 10px 20px;        /* Padding inside the button */
+    border: none;              /* Remove default button border */
+    border-radius: 15px;        /* Rounded corners */
+    font-size: 16px;           /* Text size */
+    cursor: pointer;          /* Change cursor to pointer on hover */
+    outline: 2px solid rgb(94, 109, 208);
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.nav-buttons button:hover {
+    background-color: rgb(94, 109, 208); /*blue inverted*/
+    outline: 2px solid #ffffff;  /* Slightly enlarge the button */
+    color: #fff;
+}
+
+.dropdownBtn {
+    position: relative; /* Anchor dropdown menu to this button */
+}
+
+.dropdownBtn button {
+    background-color: #ffffff; /* White background for button */
+    color: rgb(94, 109, 208); /* Blue text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default button border */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer on hover */
+    outline: 2px solid rgb(94, 109, 208);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 2; /* Ensure button appears above other elements */
+}
+
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute; /* Position relative to the button */
+    top: 100%; /* Align menu directly below button */
+    left: 0; /* Align with button's left edge */
+    background-color: rgb(195, 203, 255); /* White background for menu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Dropdown shadow */
+    padding: 10px;
+    z-index: 1; /* Ensure menu appears above other content */
+    min-width: 160px; /* Set menu width */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+}
+
+.dropdown-menu a {
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Full-width clickable area */
+    padding: 8px 12px; /* Spacing inside items */
+}
+
+.dropdown-menu a:hover {
+    background-color: hsl(0, 0%, 90%); /* Light gray hover */
+}
+
+.dropdownBtn:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    padding: 180px 0 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: flex-start;
+    
+    background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+    
+}
+
+.hero-content h2 {
+    font-family: "Poppins", serif;
+    color: rgb(30, 4, 91);
+    font-style: normal;
+    font-size: 2.4em;
+    margin-bottom: 5px;
+}
+
+.hero-content p {
+    font-family: "Poppins", serif;
+    
+    font-style: normal;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background: linear-gradient(to right, #3d25c2, #d2406e);
+    color:#fff;
+    border: none;
+    font-family: "Poppins", serif;
+    
+    font-style: normal;
+    padding: 15px 40px;
+    font-size: 1.3em;
+    
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e0a600;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Container for consistent padding */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+    .hero-content p {
+        font-size: 1.1em;
+    }
+    .about h2, .features h2 {
+        font-size: 2em;
+    }
+    .card h3 {
+        font-size: 1.6em;
+    }
+    .card p {
+        font-size: 1.1em;
+    }
+}
